@@ -7,7 +7,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get() // @Get('user') GET /abc/user
-  getUser(): string {
+  getUser(){
     return this.appService.getUser();  // 이 line의 getUser()의 정의는 app.service.
   }
 
