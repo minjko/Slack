@@ -1,14 +1,13 @@
 import { Controller, Get, Post } from '@nestjs/common';
 import { AppService } from './app.service';
 
-
 @Controller() // @Controller('abc')
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get() // @Get('user') GET /abc/user
-  getUser(){
-    return this.appService.getUser();  // 이 line의 getUser()의 정의는 app.service.
+  getUser() {
+    return this.appService.getUser(); // 이 line의 getUser()의 정의는 app.service.
   }
 
   @Post() // @Post('user') POST/abc/user
@@ -16,7 +15,6 @@ export class AppController {
     return this.appService.postUser();
   }
 }
-
 
 /* express의 경우 test하려면 mocking해야 함.
 const req = jest.mock(() => ({}));

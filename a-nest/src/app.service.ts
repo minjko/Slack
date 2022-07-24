@@ -9,7 +9,7 @@ export class AppService {
     return this.configService.get('SECRET');
   }
 
-  /*/ 실제 사용 비즈니스 로직 예시
+  /*/ 실제 사용 비즈니스로직 예시
   async getUser(): string {
     const user = await User.findOne();
     return user;
