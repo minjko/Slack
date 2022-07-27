@@ -2,15 +2,105 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3617513d-cb5f-4791-8d35-d8600745c619" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/a-nest/src/common/dto/user.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a-nest/src/users/dto/join.request.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/dataSource.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/common/decorators/token.decorator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/common/decorators/user.decorator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/common/interceptors/undefinedToNull.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/database/seeds/create-initial-data.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/entities/ChannelChats.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/entities/ChannelMembers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/entities/Channels.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/entities/DMs.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/entities/Mentions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/entities/Users.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/entities/WorkspaceMembers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/entities/Workspaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-nest/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-nest/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/app.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-nest/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/app.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-nest/src/users/users.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/users/users.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/.prettierrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/nest-cli.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/ormconfig.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/public/197.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/public/319.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/public/574.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/public/67.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/public/678.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/public/695.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/public/704.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/public/704.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/public/838.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/public/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/public/app.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/public/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/app.controller.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/app.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/app.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/auth/auth.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/auth/auth.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/auth/auth.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/auth/local-auth.guard.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/auth/local.serializer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/auth/local.strategy.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/auth/logged-in.guard.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/auth/not-logged-in.guard.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/channels/channels.controller.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/channels/channels.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/channels/channels.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/channels/channels.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/channels/channels.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/channels/dto/create-channel.dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/common/decorators/user.decorator.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/common/dto/user.dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/common/interceptors/undefinedToNull.interceptor.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/database/seeds/create-initial-data.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/dms/dms.controller.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/dms/dms.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/dms/dms.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/dms/dms.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/dms/dms.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/entities/ChannelChats.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/entities/ChannelMembers.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/entities/Channels.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/entities/DMs.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/entities/Mentions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/entities/Users.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/entities/WorkspaceMembers.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/entities/Workspaces.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/events/events.gateway.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/events/events.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/events/onlineMap.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/http-exception.filter.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/middlewares/frontend.middleware.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/middlewares/logger.middleware.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/users/dto/join.request.dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/users/dto/login.request.dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/users/users.controller.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/users/users.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/users/users.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/users/users.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/users/users.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/workspaces/dto/create-workspace.dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/workspaces/workspaces.controller.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/workspaces/workspaces.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/workspaces/workspaces.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/workspaces/workspaces.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/src/workspaces/workspaces.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/test/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/test/jest-e2e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/tsconfig.build.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-typeorm/webpack-hmr.config.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,17 +136,31 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.16.0&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.45&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Portfolio/CopyProject/Slack/slack/a-nest/output&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\Portfolio\\CopyProject\\Slack\\slack\\a-nest\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Portfolio\CopyProject\Slack\slack\a-nest\output" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Portfolio\CopyProject\Slack\slack\a-nest\src\migrations" />
+      <recent name="D:\Portfolio\CopyProject\Slack\slack\a-nest" />
+      <recent name="D:\Portfolio\CopyProject\Slack\slack\a-nest\src" />
       <recent name="D:\Portfolio\CopyProject\Slack\slack\a-nest\src\common\dto" />
     </key>
   </component>
@@ -71,6 +175,13 @@
       <workItem from="1658242320814" duration="26019000" />
       <workItem from="1658454486440" duration="1362000" />
       <workItem from="1658553394635" duration="12350000" />
+      <workItem from="1658705906214" duration="7655000" />
+      <workItem from="1658727384622" duration="1465000" />
+      <workItem from="1658728885530" duration="6077000" />
+      <workItem from="1658735039266" duration="3249000" />
+      <workItem from="1658738330251" duration="21811000" />
+      <workItem from="1658791061713" duration="3180000" />
+      <workItem from="1658918092204" duration="5248000" />
     </task>
     <servers />
   </component>
