@@ -1,5 +1,6 @@
 import { DataSource } from 'typeorm';
-import dotenv from 'dotenv';
+// @ts-ignore
+import { dotenv } from 'dotenv';
 import { ChannelChats } from './src/entities/ChannelChats';
 import { ChannelMembers } from './src/entities/ChannelMembers';
 import { Channels } from './src/entities/Channels';
@@ -28,7 +29,9 @@ const dataSource = new DataSource({
         WorkspaceMembers,
         Workspaces,
     ],
-    migrations: [__dirname + "/src/migrations/*.ts"],
+    migrationsTableName: "migrations", // 추가 +npm run typeorm migration:run -- ./src/migrations -d ./dataSource.js(ts아닌 js?)
+
+    migrations: [__dirname + '/src/migrations/*.ts'],
     charset: 'utf8mb4',
     synchronize: false,
     logging: true,
