@@ -29,9 +29,9 @@ export class UsersController {
 
   @ApiOperation({ summary: '회원가입' })
   @Post() // 닉네임, 이메일, 비밀번호를 Body로 받는다.
-  postUsers(@Body() body: JoinRequestDto) {
+  async join(@Body() body: JoinRequestDto) {
     // Data transfer object
-    this.usersService.postUsers(body.email, body.nickname, body.password);
+    await this.usersService.join(body.email, body.nickname, body.password);
   }
 
   @ApiResponse({

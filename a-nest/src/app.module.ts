@@ -46,6 +46,7 @@ const getData = async () => {
     WorkspacesModule,
     ChannelsModule,
     DmsModule,
+    TypeOrmModule.forFeature([Users]),
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: 'localhost',
