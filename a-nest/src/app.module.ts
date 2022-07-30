@@ -6,7 +6,7 @@ import { LoggerMiddleware } from './middlewares/logger.middleware';
 import { UsersModule } from './users/users.module';
 import { WorkspacesModule } from './workspaces/workspaces.module';
 import { ChannelsModule } from './channels/channels.module';
-import { DmsModule } from './dms/dms.module';
+import { DMsModule } from './dms/dms.module';
 import { TypeOrmModule } from "@nestjs/typeorm";
 import {ChannelChats} from "./entities/ChannelChats";
 import {ChannelMembers} from "./entities/ChannelMembers";
@@ -16,6 +16,9 @@ import {Mentions} from "./entities/Mentions";
 import {Users} from "./entities/Users";
 import {WorkspaceMembers} from "./entities/WorkspaceMembers";
 import {Workspaces} from "./entities/Workspaces";
+import {AuthModule} from "./auth/auth.module";
+import { EventsModule } from './events/events.module';
+import { EventsGateway } from './events/events.gateway';
 
 const tempMethod = () => {
   return {
@@ -42,11 +45,12 @@ const getData = async () => {
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true, load: [getData] }),
+    AuthModule,
     UsersModule,
     WorkspacesModule,
     ChannelsModule,
-    DmsModule,
-    TypeOrmModule.forFeature([Users]),
+    DMsModule,
+    TypeOrmModule.forFeature([Users, WorkspaceMembers, Workspaces, ChannelMembers, Channels, ChannelChats]),
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: 'localhost',
@@ -71,6 +75,7 @@ const getData = async () => {
       synchronize: false,
       logging: true,
     }),
+    EventsModule,
   ],
   controllers: [AppController],
   providers: [AppService, ConfigService],

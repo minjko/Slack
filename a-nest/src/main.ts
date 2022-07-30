@@ -8,14 +8,33 @@ import path from 'path';
 import { ValidationPipe } from '@nestjs/common';
 
 import { AppModule } from './app.module';
-import {HttpExceptionFilter} from "./httpException.filter";
+import {HttpExceptionFilter} from "./http-Exception.filter";
 
 declare const module: any;
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
+  const app = await NestFactory.create<NestExpressApplication>(AppModule);
   const port = process.env.PORT || 3000;
-  app.useGlobalPipes(new ValidationPipe());
+  app.useGlobalPipes(
+      new ValidationPipe( {
+          transform: true,
+      }),
+  );
+  if (process.env.NODE_ENV === 'production') {
+      app.enableCors({
+          origin: ['https://sleact.nodebird.com'],
+          credentials: true,
+      });
+  } else {
+      app.enableCors({
+          origin:true,
+          credentials: true,
+      });
+  }
+  app.useStaticAssets(path.join(__dirname, '..', 'uploads'), {
+     prefix: '/uploads',
+  });
+
   app.useGlobalFilters(new HttpExceptionFilter);
 
   const config = new DocumentBuilder()

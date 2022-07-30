@@ -2,17 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3617513d-cb5f-4791-8d35-d8600745c619" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/a-nest/src/httpException.filter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/auth/auth.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/auth/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/auth/local-auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/auth/local.serializer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/auth/local.strategy.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/auth/logged-in.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/auth/not-logged-in.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/channels/dto/create-channel.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/events/onlineMap.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a-nest/src/workspaces/dto/create-workspace.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1bf168cf-69b3-4879-95e1-53df866dde96.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1bf168cf-69b3-4879-95e1-53df866dde96.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-nest/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-nest/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-nest/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/entities/Users.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/entities/Users.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-nest/src/channels/channels.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/channels/channels.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-nest/src/channels/channels.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/channels/channels.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-nest/src/channels/channels.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/channels/channels.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-nest/src/dms/dms.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/dms/dms.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-nest/src/dms/dms.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/dms/dms.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-nest/src/dms/dms.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/dms/dms.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-nest/src/entities/ChannelChats.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/entities/ChannelChats.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-nest/src/httpException.filter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/http-Exception.filter.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-nest/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/users/dto/join.request.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/users/dto/join.request.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-nest/src/users/users.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/users/users.controller.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-nest/src/users/users.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/users/users.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-nest/src/users/users.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/users/users.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-nest/src/users/users.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/users/users.service.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-nest/src/users/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/users/users.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-nest/src/workspaces/workspaces.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/workspaces/workspaces.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-nest/src/workspaces/workspaces.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/workspaces/workspaces.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-nest/src/workspaces/workspaces.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/workspaces/workspaces.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-nest/test/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/test/app.e2e-spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-nest/test/jest-e2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/test/jest-e2e.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,15 +71,16 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "16.16.0",
     "javascript.nodejs.core.library.typings.version": "16.11.45",
-    "last_opened_file_path": "D:/Portfolio/CopyProject/Slack/slack/a-nest/output",
+    "last_opened_file_path": "D:/Portfolio/CopyProject/Slack/slack/a-nest/src/channels",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.standard": "",
+    "nodejs.jest.jest_package": "D:/Portfolio/CopyProject/Slack/slack/a-nest/node_modules/jest",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "D:\\Portfolio\\CopyProject\\Slack\\slack\\front\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "D:\\Portfolio\\CopyProject\\Slack\\slack\\a-nest\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -67,14 +91,95 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Portfolio\CopyProject\Slack\slack\a-nest\src\channels" />
       <recent name="D:\Portfolio\CopyProject\Slack\slack\a-nest\output" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Portfolio\CopyProject\Slack\slack\a-nest\src\events" />
       <recent name="D:\Portfolio\CopyProject\Slack\slack\a-nest\src\migrations" />
       <recent name="D:\Portfolio\CopyProject\Slack\slack\a-nest" />
       <recent name="D:\Portfolio\CopyProject\Slack\slack\a-nest\src" />
       <recent name="D:\Portfolio\CopyProject\Slack\slack\a-nest\src\common\dto" />
     </key>
+  </component>
+  <component name="RunManager" selected="Jest.UsersController">
+    <configuration name="UsersController" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/a-nest/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/a-nest" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/a-nest/src/users/users.controller.spec.ts" />
+      <test-names>
+        <test-name value="UsersController" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="UsersService" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/a-nest/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/a-nest" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/a-nest/src/users/users.service.spec.ts" />
+      <test-names>
+        <test-name value="UsersService" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="UsersService.findByEmail은 이메일을 통해 user를 찾아야 함" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/a-nest/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/a-nest" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/a-nest/src/users/users.service.spec.ts" />
+      <test-names>
+        <test-name value="UsersService" />
+        <test-name value="findByEmail은 이메일을 통해 user를 찾아야 함" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="UsersService.findByEmail은 user를 못 찾으면 null을 반환해야 함" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/a-nest/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/a-nest" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/a-nest/src/users/users.service.spec.ts" />
+      <test-names>
+        <test-name value="UsersService" />
+        <test-name value="findByEmail은 user를 못 찾으면 null을 반환해야 함" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="UsersService.should be defined" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/a-nest/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/a-nest" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/a-nest/src/users/users.service.spec.ts" />
+      <test-names>
+        <test-name value="UsersService" />
+        <test-name value="should be defined" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.UsersController" />
+        <item itemvalue="Jest.UsersService.findByEmail은 user를 못 찾으면 null을 반환해야 함" />
+        <item itemvalue="Jest.UsersService.findByEmail은 이메일을 통해 user를 찾아야 함" />
+        <item itemvalue="Jest.UsersService.should be defined" />
+        <item itemvalue="Jest.UsersService" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -98,6 +203,10 @@
       <workItem from="1658931918642" duration="4306000" />
       <workItem from="1658965874513" duration="878000" />
       <workItem from="1658966777954" duration="8154000" />
+      <workItem from="1658979825411" duration="8821000" />
+      <workItem from="1659000086636" duration="14778000" />
+      <workItem from="1659050398050" duration="7393000" />
+      <workItem from="1659147568089" duration="8446000" />
     </task>
     <servers />
   </component>

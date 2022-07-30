@@ -10,6 +10,8 @@ import {
 } from 'typeorm';
 import { Users } from './Users';
 import { Channels } from './Channels';
+import {IsNotEmpty, IsString} from "class-validator";
+import {ApiProperty} from "@nestjs/swagger";
 
 // @Index의 경우 SQL 성능 높이기 위해 사용. 없어도 무관.
 @Index('UserId', ['UserId'], {})
@@ -19,6 +21,12 @@ export class ChannelChats {
   @PrimaryGeneratedColumn({ type: 'int', name: 'id' })
   id: number;
 
+  @IsNotEmpty()
+  @IsString()
+  @ApiProperty({
+    description: '메시지 내용',
+    example: '안녕 반가워',
+  })
   @Column('text', { name: 'content' })
   content: string;
 
