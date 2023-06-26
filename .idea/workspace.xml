@@ -1,42 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3617513d-cb5f-4791-8d35-d8600745c619" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/a-nest/src/auth/auth.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a-nest/src/auth/auth.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a-nest/src/auth/local-auth.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a-nest/src/auth/local.serializer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a-nest/src/auth/local.strategy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a-nest/src/auth/logged-in.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a-nest/src/auth/not-logged-in.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a-nest/src/channels/dto/create-channel.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a-nest/src/events/onlineMap.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a-nest/src/workspaces/dto/create-workspace.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1bf168cf-69b3-4879-95e1-53df866dde96.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1bf168cf-69b3-4879-95e1-53df866dde96.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/channels/channels.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/channels/channels.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/channels/channels.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/channels/channels.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/channels/channels.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/channels/channels.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/dms/dms.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/dms/dms.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/dms/dms.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/dms/dms.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/dms/dms.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/dms/dms.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/entities/ChannelChats.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/entities/ChannelChats.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/httpException.filter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/http-Exception.filter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/users/users.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/users/users.controller.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/users/users.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/users/users.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/users/users.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/users/users.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/users/users.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/users/users.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/users/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/users/users.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/workspaces/workspaces.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/workspaces/workspaces.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/workspaces/workspaces.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/workspaces/workspaces.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/src/workspaces/workspaces.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/src/workspaces/workspaces.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/test/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/test/app.e2e-spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-nest/test/jest-e2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/a-nest/test/jest-e2e.json" afterDir="false" />
-    </list>
+    <list default="true" id="3617513d-cb5f-4791-8d35-d8600745c619" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -206,7 +171,7 @@
       <workItem from="1658979825411" duration="8821000" />
       <workItem from="1659000086636" duration="14778000" />
       <workItem from="1659050398050" duration="7393000" />
-      <workItem from="1659147568089" duration="8446000" />
+      <workItem from="1659147568089" duration="8905000" />
     </task>
     <servers />
   </component>

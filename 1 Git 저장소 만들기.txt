@@ -1,0 +1,89 @@
+[Git 저장소 만들기]
+<cmd>
+
+Microsoft Windows [Version 10.0.19044.1826]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\komj>d:
+
+
+
+D:\>cd D:\Portfolio\CopyProject\Slack
+
+
+
+D:\Portfolio\CopyProject\Slack>dir
+ D 드라이브의 볼륨: 새 볼륨
+ 볼륨 일련 번호: 10A0-7EC2
+
+ D:\Portfolio\CopyProject\Slack 디렉터리
+
+2022-07-20  오후 12:16    <DIR>          .
+2022-07-20  오후 12:16    <DIR>          ..
+2022-07-19  오후 04:28    <DIR>          description
+               0개 파일                   0 바이트
+               3개 디렉터리  46,854,651,904 바이트 남음
+
+
+
+D:\Portfolio\CopyProject\Slack>git clone https://github.com/minjko/Slack.git slack
+Cloning into 'slack'...
+fatal: User canceled device code authentication
+Username for 'https://github.com': minjko
+Password for 'https://minjko@github.com':
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/minjko/Slack.git/'
+
+
+
+D:\Portfolio\CopyProject\Slack>git clone https://github.com/minjko/Slack.git slack
+Cloning into 'slack'...
+fatal: helper error (-1): User cancelled dialog.
+Username for 'https://github.com':
+D:\Portfolio\CopyProject\Slack>git clone https://github.com/minjko/Slack.git slack
+Cloning into 'slack'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), done.
+
+
+
+D:\Portfolio\CopyProject\Slack>dir
+ D 드라이브의 볼륨: 새 볼륨
+ 볼륨 일련 번호: 10A0-7EC2
+
+ D:\Portfolio\CopyProject\Slack 디렉터리
+
+2022-07-20  오후 12:30    <DIR>          .
+2022-07-20  오후 12:30    <DIR>          ..
+2022-07-19  오후 04:28    <DIR>          description
+2022-07-20  오후 12:33    <DIR>          slack
+               0개 파일                   0 바이트
+               4개 디렉터리  46,854,328,320 바이트 남음
+
+
+
+D:\Portfolio\CopyProject\Slack>cd slack
+
+
+
+D:\Portfolio\CopyProject\Slack\slack>dir
+ D 드라이브의 볼륨: 새 볼륨
+ 볼륨 일련 번호: 10A0-7EC2
+
+ D:\Portfolio\CopyProject\Slack\slack 디렉터리
+
+2022-07-20  오후 12:43    <DIR>          .
+2022-07-20  오후 12:43    <DIR>          ..
+2022-07-20  오후 12:33             1,714 .gitignore
+2022-07-20  오후 12:43    <DIR>          .idea
+2022-07-20  오후 12:33                78 README.md
+               2개 파일               1,792 바이트
+               3개 디렉터리  46,854,324,224 바이트 남음
+
+
+
+D:\Portfolio\CopyProject\Slack\slack>

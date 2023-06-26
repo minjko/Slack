@@ -1,0 +1,25 @@
+0. 소개
+Slack 사이트를 Clone coding하는 프로젝트이다
+
+1. 강좌 
+인프런 사이트에서 조현영 강사님의 <Slack 클론 코딩[백엔드 with NestJS + TypeORM]>
+
+2. 강의 자료 및 소스 코드
+https://github.com/ZeroCho/sleact
+또는 
+https://github.com/ZeroCho/sleact/blob/master/nest-typeorm/README.md
+
+3. 필요한 프로그램
+MySQL 8.0
+Visual Studio 2019 Community .NET 데스크톱 개발
+Node.js
+Webstorm (Jetbrains의 Student License ID : M0XW65S7WA(20220719 1년 후 갱신 필요)
+		   Webstorm 다운받을 때 있던 sha256 checksum 링크 클릭했더니 : be3accf8246f5d6bd85393da7028d80f4581e33041be51dbe23284778b1e9dba *WebStorm-2022.1.3.exe
+VScode
+Postman(설치 안 함)
+
+4. 프로그램 실행 오류 시
+MySQL : [제어판]-[시스템 및 보안]-[관리 도구]-[서비스]-[MySQL]-context menu-시작
+           : node.js와 연결 오류 시 네이버 블로그 2-1 재설치 참고
+
+
